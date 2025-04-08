@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public InputHandler inputHandler;
 
+    public Animator anim;
+
     private Moveable moveable;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +29,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnSetDirection(Vector2 direction)
     {
-        //Debug.Log("Test " + direction);
+        Debug.Log("Test " + direction);
         moveable.setDirection(direction);
+
+        if(anim != null){
+            anim.SetFloat("direction", direction.x);
+        }
     }
 
     private void OnEnable()

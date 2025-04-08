@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputHandler: {fileID: 11400000, guid: 7ef544267c6d5424f89bcf881960aee0, type: 2}
+  anim: {fileID: 6402926281838977989}
 --- !u!114 &6402926281838977991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,8 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 0
-  lifeScriptable: {fileID: 11400000, guid: 35f55156872d02340b1acf10c1abad5b, type: 2}
   maxLife: 0
+  lifeScriptable: {fileID: 11400000, guid: 35f55156872d02340b1acf10c1abad5b, type: 2}
   maxLifeScriptable: {fileID: 11400000, guid: cb25ae83a170a50408c5f285045a4aff, type: 2}
   useScriptable: 1
   OnLifeReachZero:
